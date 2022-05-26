@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Number analyzer</h1>
+    </header>
+    <section class="container">
+      <div class="user-input">
+        <label for="userData">Enter a number between 0 and 100</label>
+        <input
+          type="number"
+          id="userData"
+          name="user-number"
+          min="0"
+          max="100"
+        />
+        <button id="submitButton">Add Number</button>
+      </div>
+      <section class="content">
+        <div class="select-number">
+          <select name="numbers" id="numbersToAnalyze" size="10"></select>
+          <div class="Buttons">
+            <button id="analylerBtn">Analyzer</button>
+            <button id="resetBtn">Reset</button>
+          </div>
+        </div>
+        <div id="resultOfAnalize" class="result"></div>
+      </section>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
